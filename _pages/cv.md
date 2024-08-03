@@ -11,35 +11,27 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D, Department of Finance, University of Cincinnati, 2024 onwards
+* Master of Science, Department of Electronics Engineering, Shanghai Jiao Tong University University, 2013
+* Bachelor in Electronics & Information Engineering, Hangzhou Dianzi University, GitHub University, 2010
 
-Work experience
+Pre-PhD Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Jun 2023 to Jul 2024: Investment Banking Product Manager
+  * China CITIC Bank
+  * China & HK listed commericial bank
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Nov 2019 to Jun 2020: Financial Product Manager
+  * Huaxi Securities
+  * China A share listed security firm
 
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Jun 2015 to Nov 2019: Financial Institutions Product Manager
+  * Bank of Communications
+  * China & HK listed commericial bank
   
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Apr 2013 to Jun 2015: Management Associate
+  * Citibank (China)
+  * Wholly owned subsidiary of Citibank N.A.
 
 Publications
 ======
