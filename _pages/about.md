@@ -17,7 +17,7 @@ Education
 ======
 * Ph.D, Department of Finance, University of Cincinnati, 2024 onwards
 * Master of Science, Department of Electronics Engineering, Shanghai Jiao Tong University University, 2013
-* Bachelor in Electronics & Information Engineering, Hangzhou Dianzi University, GitHub University, 2010
+* Bachelor in Electronics & Information Engineering, Hangzhou Dianzi University, 2010
 
 Pre-PhD Work experience
 ======
