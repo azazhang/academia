@@ -16,6 +16,9 @@ concurrency:
   group: "pages"
   cancel-in-progress: true
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true" # Forces runner actions to execute using Node.js 24
+
 jobs:
   deploy:
     environment:
@@ -29,7 +32,7 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22 # Updated to Node 22 (LTS) for compiling the application
           cache: 'npm'
 
       - name: Install dependencies
