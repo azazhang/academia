@@ -16,15 +16,15 @@ export default function Home({ setActiveTab }) {
       <SectionCard title="About Me">
         <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
           <p style={{ fontSize: '1.05rem', lineHeight: '1.7', color: 'var(--text-secondary)' }}>
-            I am a PhD Student in Finance at the <strong>Carl H. Lindner College of Business, University of Cincinnati</strong>. 
+            I am a PhD Student in Finance at the Carl H. Lindner College of Business, University of Cincinnati. 
             My research spans monetary policy, corporate finance, and governance, with a particular focus on utilizing 
-            <strong> Natural Language Processing (NLP)</strong> and textual analysis tools to extract risk exposures and cognitive traits from corporate disclosures.
+            Natural Language Processing (NLP) and textual analysis tools to extract risk exposures and cognitive traits from corporate disclosures.
           </p>
           
           <p style={{ fontSize: '1.05rem', lineHeight: '1.7', color: 'var(--text-secondary)' }}>
             Prior to joining academia, I spent over a decade in the financial industry, working as a Product Manager in 
-            investment banking and financial institutions at leading firms including <strong>Citibank</strong>, 
-            <strong> China CITIC Bank</strong>, and <strong>Bank of Communications</strong>. 
+            investment banking and financial institutions at leading firms including Citibank, 
+            China CITIC Bank, and Bank of Communications. 
             This extensive industry background grounds my research in practical financial mechanisms and market structures.
           </p>
         </div>
