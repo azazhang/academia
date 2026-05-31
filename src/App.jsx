@@ -199,11 +199,36 @@ export default function App() {
       </aside>
 
       {/* Main Content Layout */}
-      <main id="page-content" style={{ display: 'flex', flexDirection: 'column', gap: '30px' }}>
-        <div className="mobile-nav-only sticky-nav">
-          <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
+      <main id="page-content" style={{ 
+        display: 'flex', 
+        flexDirection: 'column', 
+        gap: '30px', 
+        minHeight: 'calc(100vh - 80px)', 
+        justifyContent: 'space-between' 
+      }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '30px' }}>
+          <div className="mobile-nav-only sticky-nav">
+            <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
+          </div>
+          {renderContent()}
         </div>
-        {renderContent()}
+        
+        {/* Footer */}
+        <footer style={{ 
+          marginTop: '40px', 
+          paddingTop: '20px', 
+          borderTop: '1px solid rgba(15, 23, 42, 0.05)', 
+          display: 'flex', 
+          justifyContent: 'space-between', 
+          alignItems: 'center',
+          fontSize: '0.82rem',
+          color: 'var(--text-muted)',
+          flexWrap: 'wrap',
+          gap: '10px'
+        }}>
+          <span>&copy; {new Date().getFullYear()} Ang Zhang. All rights reserved.</span>
+          <span>Built using React, Vite & GitHub Actions</span>
+        </footer>
       </main>
 
     </div>

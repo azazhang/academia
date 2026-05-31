@@ -22,10 +22,7 @@ export default function Home({ setActiveTab }) {
           </p>
           
           <p style={{ fontSize: '1.05rem', lineHeight: '1.7', color: 'var(--text-secondary)' }}>
-            My research is deeply informed by more than a decade of industry experience managing treasury operations, 
-            debt instruments, and interbank liquidity at global financial institutions. This background provides me with 
-            first-hand institutional knowledge of banking structures, central bank policy transmission, and financial markets, 
-            which I leverage to formulate realistic empirical designs and identify novel data environments.
+            My research leverages a decade of banking experience in treasury operations and interbank liquidity. This institutional background informs my empirical designs, policy transmission analysis, and data identification.
           </p>
         </div>
       </SectionCard>
