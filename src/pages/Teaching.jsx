@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import SectionCard from '../components/SectionCard';
 
 export default function Teaching() {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setIsMounted(true), 50);
+    return () => clearTimeout(timer);
+  }, []);
   const independentCourses = [
     {
       code: "FIN 4013",
@@ -94,7 +100,7 @@ export default function Teaching() {
                   </span>
                 </div>
                 <div className="metric-bar-bg">
-                  <div className="metric-bar-fill" style={{ width: `${course.percentage}%` }}></div>
+                  <div className="metric-bar-fill" style={{ width: isMounted ? `${course.percentage}%` : '0%' }}></div>
                 </div>
               </div>
             </SectionCard>

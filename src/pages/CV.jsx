@@ -75,29 +75,7 @@ export default function CV() {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '30px' }}>
       
-      {/* Education Background */}
-      <div>
-        <h2 style={{ fontSize: '1.4rem', fontWeight: 600, color: 'var(--text-primary)', marginBottom: '18px', paddingLeft: '4px' }}>
-          Education Background
-        </h2>
-        <div className="timeline">
-          {education.map((edu, idx) => (
-            <div key={idx} className="timeline-item">
-              <div className="timeline-dot"></div>
-              <div className="timeline-date">{edu.date}</div>
-              <h3 className="timeline-title">{edu.degree}</h3>
-              <div className="timeline-subtitle">{edu.institution}</div>
-              <ul style={{ paddingLeft: '16px', margin: 0, fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
-                {edu.details.map((detail, dIdx) => (
-                  <li key={dIdx} style={{ marginBottom: '2px' }}>{detail}</li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Professional Memberships & Academic Service (Moved on top as requested) */}
+      {/* Professional Memberships & Academic Service (At the very top) */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px' }}>
         
         {/* Credentials */}
@@ -136,6 +114,28 @@ export default function CV() {
           </ul>
         </SectionCard>
 
+      </div>
+
+      {/* Education Background */}
+      <div>
+        <h2 style={{ fontSize: '1.4rem', fontWeight: 600, color: 'var(--text-primary)', marginBottom: '18px', paddingLeft: '4px' }}>
+          Education Background
+        </h2>
+        <div className="timeline">
+          {education.map((edu, idx) => (
+            <div key={idx} className="timeline-item">
+              <div className={`timeline-dot ${idx === 0 ? 'timeline-dot-active' : ''}`}></div>
+              <div className="timeline-date">{edu.date}</div>
+              <h3 className="timeline-title">{edu.degree}</h3>
+              <div className="timeline-subtitle">{edu.institution}</div>
+              <ul style={{ paddingLeft: '16px', margin: 0, fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
+                {edu.details.map((detail, dIdx) => (
+                  <li key={dIdx} style={{ marginBottom: '2px' }}>{detail}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* Experience Timeline */}

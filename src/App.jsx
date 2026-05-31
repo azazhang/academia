@@ -210,7 +210,9 @@ export default function App() {
           <div className="mobile-nav-only sticky-nav">
             <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
           </div>
-          {renderContent()}
+          <div key={activeTab} className="animate-fade-in-up">
+            {renderContent()}
+          </div>
         </div>
         
         {/* Footer */}

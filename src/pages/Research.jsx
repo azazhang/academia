@@ -9,7 +9,7 @@ export default function Research() {
     {
       id: 'military-service',
       title: "The U-shaped Imprint: Military Service Intensity and CEOs’ Strategic Attention",
-      authors: "Zhenhua Li, Jeffrey Barden, Jonathan D. Arthurs, and Ang Zhang",
+      authors: "Zhenhua Li, Ang Zhang, Jeffrey Barden, and Jonathan D. Arthurs",
       status: "Accepted for AoM 2026",
       type: "conference",
       badgeColor: "badge-indigo",
@@ -19,7 +19,6 @@ export default function Research() {
     {
       id: 'fed-information',
       title: "Federal Reserve Information Effect, Monetary Policy, and Asset Prices",
-      authors: "Ang Zhang (Doctoral Project)",
       advisor: "Dr. Hui Guo",
       status: "Doctoral Research / Working Paper",
       type: "working",
@@ -30,7 +29,6 @@ export default function Research() {
     {
       id: 'human-capital',
       title: "Measuring Human Capital Risk using Textual Analysis",
-      authors: "Ang Zhang",
       status: "Working Paper / Work in Progress",
       type: "wip",
       badgeColor: "badge-emerald",
@@ -105,16 +103,20 @@ export default function Research() {
                 {paper.title}
               </h3>
               
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '4px', marginBottom: '14px' }}>
-                <p style={{ fontSize: '0.92rem', color: 'var(--text-secondary)', margin: 0 }}>
-                  <strong>Authors:</strong> {paper.authors}
-                </p>
-                {paper.advisor && (
-                  <p style={{ fontSize: '0.92rem', color: 'var(--text-secondary)', margin: 0 }}>
-                    <strong>Advisor:</strong> {paper.advisor}
-                  </p>
-                )}
-              </div>
+              {(paper.authors || paper.advisor) && (
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '4px', marginBottom: '14px' }}>
+                  {paper.authors && (
+                    <p style={{ fontSize: '0.92rem', color: 'var(--text-secondary)', margin: 0 }}>
+                      <strong>Authors:</strong> {paper.authors}
+                    </p>
+                  )}
+                  {paper.advisor && (
+                    <p style={{ fontSize: '0.92rem', color: 'var(--text-secondary)', margin: 0 }}>
+                      <strong>Advisor:</strong> {paper.advisor}
+                    </p>
+                  )}
+                </div>
+              )}
 
               <AbstractCollapsible abstract={paper.abstract} />
 
