@@ -35,28 +35,40 @@ export default function CV() {
       role: "Investment Banking Product Manager",
       company: "China CITIC Bank",
       type: "China & HK Listed Commercial Bank",
-      details: ["Managed product lifecycle and asset structuring for investment banking division assets.", "Worked closely with debt capital markets and corporate finance departments."]
+      details: [
+        "Structured credit and debt products, gaining extensive exposure to commercial debt markets, asset backing, and corporate financing operations.",
+        "Analyzed corporate financial statements and credit metrics to optimize product risk profiles."
+      ]
     },
     {
       date: "Nov 2019 – Jun 2020",
       role: "Financial Product Manager",
       company: "Huaxi Securities",
       type: "China A-Share Listed Securities Firm",
-      details: ["Designed and implemented investment structures for retail and institutional financial products."]
+      details: [
+        "Designed retail and institutional fixed income and structured financial products.",
+        "Utilized quantitative models to evaluate cash flows, return yields, and risk-return characteristics of asset pools."
+      ]
     },
     {
       date: "Jun 2015 – Nov 2019",
       role: "Financial Institutions Product Manager",
       company: "Bank of Communications",
       type: "China & HK Listed Commercial Bank",
-      details: ["Formulated interbank product lines, managed institutional liquidity tools, and oversaw secondary market distribution of financial certificates."]
+      details: [
+        "Developed interbank liquidity and treasury management tools, analyzing interest rate risk and money market conditions.",
+        "Managed secondary market trading and distribution metrics of large-scale financial certificates."
+      ]
     },
     {
       date: "Apr 2013 – Jun 2015",
       role: "Management Associate",
       company: "Citibank (China)",
       type: "Wholly owned subsidiary of Citibank N.A.",
-      details: ["Rotated through treasury, commercial banking, risk management, and consumer lending divisions under the global management training program."]
+      details: [
+        "Completed rigorous credit analysis, treasury operations, and risk management rotations under the Global Management Associate program.",
+        "Gained a first-hand understanding of commercial lending constraints, risk metrics, and liquidity regulations (such as Basel III)."
+      ]
     }
   ];
 

@@ -97,7 +97,9 @@ export default function App() {
             </div>
           </div>
 
-          <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
+          <div className="desktop-nav-only">
+            <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
+          </div>
 
           {/* Social Badges Footer */}
           <div style={{ 
@@ -198,6 +200,9 @@ export default function App() {
 
       {/* Main Content Layout */}
       <main id="page-content" style={{ display: 'flex', flexDirection: 'column', gap: '30px' }}>
+        <div className="mobile-nav-only sticky-nav">
+          <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
+        </div>
         {renderContent()}
       </main>
 

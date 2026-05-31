@@ -50,10 +50,20 @@ export default function Navbar({ activeTab, setActiveTab }) {
             text-align: center;
             flex-grow: 1;
           }
+          .nav-link:hover {
+            padding-left: 6px !important;
+          }
+          .nav-link.active {
+            padding-left: 6px !important;
+          }
           .nav-link.active::after {
             bottom: -6px !important;
             left: 6px !important;
             right: 6px !important;
+            top: auto !important;
+            width: auto !important;
+            height: 2.5px !important;
+            background-color: var(--color-accent) !important;
           }
         }
       `}</style>

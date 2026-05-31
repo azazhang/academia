@@ -141,35 +141,31 @@ a:hover {
   font-weight: 500;
   font-size: 1.05rem;
   color: var(--text-muted);
-  padding: 8px 12px;
+  padding: 8px 16px;
   cursor: pointer;
-  transition: color var(--transition-fast);
+  transition: color var(--transition-fast), padding-left var(--transition-fast);
 }
 
 .nav-link:hover {
   color: var(--text-primary);
+  padding-left: 20px;
 }
 
 .nav-link.active {
   color: var(--color-accent);
   font-weight: 600;
+  padding-left: 22px;
 }
 
 .nav-link.active::after {
   content: '';
   position: absolute;
-  bottom: 0;
-  left: 12px;
-  right: 12px;
-  height: 2.5px;
+  left: 6px;
+  top: 8px;
+  bottom: 8px;
+  width: 3px;
   background-color: var(--color-accent);
   border-radius: 2px;
-  animation: slideIn var(--transition-fast) forwards;
-}
-
-@keyframes slideIn {
-  from { transform: scaleX(0); }
-  to { transform: scaleX(1); }
 }
 
 /* Badges */
@@ -327,4 +323,32 @@ button, select {
 
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(15, 23, 42, 0.2);
+}
+
+/* Responsive Navigation Utility Classes */
+.desktop-nav-only {
+  display: block;
+}
+.mobile-nav-only {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .desktop-nav-only {
+    display: none;
+  }
+  .mobile-nav-only {
+    display: block;
+  }
+  .sticky-nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(248, 250, 252, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    margin: 0 -20px 10px;
+    padding: 10px 20px;
+    border-bottom: 1px solid rgba(15, 23, 42, 0.06);
+  }
 }

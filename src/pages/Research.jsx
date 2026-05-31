@@ -118,6 +118,32 @@ export default function Research() {
 
               <AbstractCollapsible abstract={paper.abstract} />
 
+              <div style={{ marginTop: '16px', display: 'flex', gap: '10px' }}>
+                <a 
+                  href={`mailto:zhang2a5@mail.uc.edu?subject=Request for Draft: ${encodeURIComponent(paper.title)}`}
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '6px',
+                    fontSize: '0.85rem',
+                    fontWeight: '600',
+                    color: '#fff',
+                    backgroundColor: 'var(--color-accent)',
+                    padding: '6px 14px',
+                    borderRadius: '20px',
+                    transition: 'background-color var(--transition-fast)'
+                  }}
+                  onMouseOver={(e) => e.target.style.backgroundColor = 'var(--color-accent-hover)'}
+                  onMouseOut={(e) => e.target.style.backgroundColor = 'var(--color-accent)'}
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                  </svg>
+                  Email for Draft
+                </a>
+              </div>
+
             </SectionCard>
           ))
         ) : (

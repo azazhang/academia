@@ -22,10 +22,10 @@ export default function Home({ setActiveTab }) {
           </p>
           
           <p style={{ fontSize: '1.05rem', lineHeight: '1.7', color: 'var(--text-secondary)' }}>
-            Prior to joining academia, I spent over a decade in the financial industry, working as a Product Manager in 
-            investment banking and financial institutions at leading firms including Citibank, 
-            China CITIC Bank, and Bank of Communications. 
-            This extensive industry background grounds my research in practical financial mechanisms and market structures.
+            My research is deeply informed by more than a decade of industry experience managing treasury operations, 
+            debt instruments, and interbank liquidity at global financial institutions. This background provides me with 
+            first-hand institutional knowledge of banking structures, central bank policy transmission, and financial markets, 
+            which I leverage to formulate realistic empirical designs and identify novel data environments.
           </p>
         </div>
       </SectionCard>
