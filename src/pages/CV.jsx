@@ -75,7 +75,7 @@ export default function CV() {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '30px' }}>
       
-      {/* Education Timeline */}
+      {/* Education Background */}
       <div>
         <h2 style={{ fontSize: '1.4rem', fontWeight: 600, color: 'var(--text-primary)', marginBottom: '18px', paddingLeft: '4px' }}>
           Education Background
@@ -97,29 +97,7 @@ export default function CV() {
         </div>
       </div>
 
-      {/* Experience Timeline */}
-      <div>
-        <h2 style={{ fontSize: '1.4rem', fontWeight: 600, color: 'var(--text-primary)', marginBottom: '18px', paddingLeft: '4px' }}>
-          Pre-PhD Professional Experience
-        </h2>
-        <div className="timeline">
-          {experience.map((exp, idx) => (
-            <div key={idx} className="timeline-item">
-              <div className="timeline-dot"></div>
-              <div className="timeline-date">{exp.date}</div>
-              <h3 className="timeline-title">{exp.role}</h3>
-              <div className="timeline-subtitle">{exp.company} <span style={{ fontWeight: 'normal', fontSize: '0.85rem' }}>({exp.type})</span></div>
-              <ul style={{ paddingLeft: '16px', margin: 0, fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
-                {exp.details.map((detail, dIdx) => (
-                  <li key={dIdx} style={{ marginBottom: '2px' }}>{detail}</li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Professional Memberships & Service */}
+      {/* Professional Memberships & Academic Service (Moved on top as requested) */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px' }}>
         
         {/* Credentials */}
@@ -158,6 +136,28 @@ export default function CV() {
           </ul>
         </SectionCard>
 
+      </div>
+
+      {/* Experience Timeline */}
+      <div>
+        <h2 style={{ fontSize: '1.4rem', fontWeight: 600, color: 'var(--text-primary)', marginBottom: '18px', paddingLeft: '4px' }}>
+          Pre-PhD Professional Experience
+        </h2>
+        <div className="timeline">
+          {experience.map((exp, idx) => (
+            <div key={idx} className="timeline-item">
+              <div className="timeline-dot"></div>
+              <div className="timeline-date">{exp.date}</div>
+              <h3 className="timeline-title">{exp.role}</h3>
+              <div className="timeline-subtitle">{exp.company} <span style={{ fontWeight: 'normal', fontSize: '0.85rem' }}>({exp.type})</span></div>
+              <ul style={{ paddingLeft: '16px', margin: 0, fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
+                {exp.details.map((detail, dIdx) => (
+                  <li key={dIdx} style={{ marginBottom: '2px' }}>{detail}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
       </div>
 
     </div>
