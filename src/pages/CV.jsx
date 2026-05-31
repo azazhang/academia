@@ -34,41 +34,25 @@ export default function CV() {
       date: "Jun 2023 – Jul 2024",
       role: "Investment Banking Product Manager",
       company: "China CITIC Bank",
-      type: "China & HK Listed Commercial Bank",
-      details: [
-        "Structured credit and debt products, gaining extensive exposure to commercial debt markets, asset backing, and corporate financing operations.",
-        "Analyzed corporate financial statements and credit metrics to optimize product risk profiles."
-      ]
+      type: "China & HK Listed Commercial Bank"
     },
     {
       date: "Nov 2019 – Jun 2020",
       role: "Financial Product Manager",
       company: "Huaxi Securities",
-      type: "China A-Share Listed Securities Firm",
-      details: [
-        "Designed retail and institutional fixed income and structured financial products.",
-        "Utilized quantitative models to evaluate cash flows, return yields, and risk-return characteristics of asset pools."
-      ]
+      type: "China A-Share Listed Securities Firm"
     },
     {
       date: "Jun 2015 – Nov 2019",
       role: "Financial Institutions Product Manager",
       company: "Bank of Communications",
-      type: "China & HK Listed Commercial Bank",
-      details: [
-        "Developed interbank liquidity and treasury management tools, analyzing interest rate risk and money market conditions.",
-        "Managed secondary market trading and distribution metrics of large-scale financial certificates."
-      ]
+      type: "China & HK Listed Commercial Bank"
     },
     {
       date: "Apr 2013 – Jun 2015",
       role: "Management Associate",
       company: "Citibank (China)",
-      type: "Wholly owned subsidiary of Citibank N.A.",
-      details: [
-        "Completed rigorous credit analysis, treasury operations, and risk management rotations under the Global Management Associate program.",
-        "Gained a first-hand understanding of commercial lending constraints, risk metrics, and liquidity regulations (such as Basel III)."
-      ]
+      type: "Wholly owned subsidiary of Citibank N.A."
     }
   ];
 
@@ -150,11 +134,7 @@ export default function CV() {
               <div className="timeline-date">{exp.date}</div>
               <h3 className="timeline-title">{exp.role}</h3>
               <div className="timeline-subtitle">{exp.company} <span style={{ fontWeight: 'normal', fontSize: '0.85rem' }}>({exp.type})</span></div>
-              <ul style={{ paddingLeft: '16px', margin: 0, fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
-                {exp.details.map((detail, dIdx) => (
-                  <li key={dIdx} style={{ marginBottom: '2px' }}>{detail}</li>
-                ))}
-              </ul>
+              {/* Details removed to maintain professional summary focus */}
             </div>
           ))}
         </div>
