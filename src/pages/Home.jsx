@@ -88,6 +88,25 @@ export default function Home({ setActiveTab }) {
         </div>
       </SectionCard>
 
+      {/* Research Interests Grid */}
+      <div>
+        <h2 style={{ fontSize: '1.4rem', fontWeight: 600, color: 'var(--text-primary)', marginBottom: '16px', paddingLeft: '4px' }}>
+          Primary Research Interests
+        </h2>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px' }}>
+          {interests.map((interest, i) => (
+            <SectionCard key={i} interactive={true}>
+              <h3 style={{ fontSize: '1.15rem', color: 'var(--color-accent)', marginBottom: '8px', fontWeight: 600 }}>
+                {interest.title}
+              </h3>
+              <p style={{ fontSize: '0.92rem', lineHeight: '1.5', color: 'var(--text-secondary)' }}>
+                {interest.desc}
+              </p>
+            </SectionCard>
+          ))}
+        </div>
+      </div>
+
       {/* Recent Updates */}
       <SectionCard title="Recent Updates">
         <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
@@ -117,25 +136,6 @@ export default function Home({ setActiveTab }) {
           ))}
         </div>
       </SectionCard>
-
-      {/* Research Interests Grid */}
-      <div>
-        <h2 style={{ fontSize: '1.4rem', fontWeight: 600, color: 'var(--text-primary)', marginBottom: '16px', paddingLeft: '4px' }}>
-          Primary Research Interests
-        </h2>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px' }}>
-          {interests.map((interest, i) => (
-            <SectionCard key={i} interactive={true}>
-              <h3 style={{ fontSize: '1.15rem', color: 'var(--color-accent)', marginBottom: '8px', fontWeight: 600 }}>
-                {interest.title}
-              </h3>
-              <p style={{ fontSize: '0.92rem', lineHeight: '1.5', color: 'var(--text-secondary)' }}>
-                {interest.desc}
-              </p>
-            </SectionCard>
-          ))}
-        </div>
-      </div>
 
       {/* Quick Credentials / Highlights */}
       <SectionCard title="Quick Highlights">

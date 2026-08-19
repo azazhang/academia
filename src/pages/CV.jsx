@@ -87,13 +87,10 @@ export default function CV() {
         <SectionCard title="Academic Services">
           <ul style={{ display: 'flex', flexDirection: 'column', gap: '8px', paddingLeft: '16px', margin: 0, fontSize: '0.92rem', color: 'var(--text-secondary)' }}>
             <li>
-              Reviewer for <strong>Risk Sciences</strong>
+              Ad-hoc Reviewer for <strong>Risk Sciences</strong>
             </li>
             <li>
-              Reviewer for <strong>Journal of Financial Counselling and Planning</strong>
-            </li>
-            <li>
-              Volunteer Reviewer for the <strong>Academy of Management (AoM)</strong> Annual Meeting
+              Ad-hoc Reviewer for <strong>Journal of Financial Counseling and Planning</strong>
             </li>
           </ul>
         </SectionCard>
