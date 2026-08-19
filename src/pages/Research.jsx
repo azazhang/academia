@@ -7,33 +7,12 @@ export default function Research() {
 
   const papers = [
     {
-      id: 'military-service',
-      title: "The U-shaped Imprint: Military Service Intensity and CEOs’ Strategic Attention",
-      authors: "Zhenhua Li, Ang Zhang, Jeffrey Barden, and Jonathan D. Arthurs",
-      status: "AoM 2026 Proceedings",
-      type: "conference",
-      badgeColor: "badge-indigo",
-      abstract: "Integrating the attention-based view with imprinting theory, we examine how CEOs’ military service influences the structure of executive attention. We propose and find a U-shaped relationship between military service intensity and CEOs’ self-centered attention using a panel of U.S. public firms and text analysis of MD&A disclosures. We theorize that military experience imprints durable cognitive filters, but the strength varies non-linearly with service intensity: moderate military exposure broadens outward attention, whereas low/high intensity reinforces inward focus. This study advances the understanding of how formative institutions shape strategic attention allocation.",
-      links: [
-        {
-          label: "AoM Proceedings",
-          url: "https://journals.aom.org/doi/abs/10.5465/AMPROC.2026.13752abstract",
-          type: "external"
-        },
-        {
-          label: "Email for Draft",
-          url: "mailto:zhang2a5@mail.uc.edu?subject=Request for Draft: The U-shaped Imprint: Military Service Intensity and CEOs’ Strategic Attention",
-          type: "email"
-        }
-      ]
-    },
-    {
       id: 'human-capital',
-      title: "Measuring Human Capital Risk using Textual Analysis",
+      title: "Disclosed Human-Capital Disruption and Firm-Specific Risk",
       status: "Working Paper (arXiv:2608.14859)",
       type: "working",
       badgeColor: "badge-emerald",
-      abstract: "This study develops a novel, NLP-based measure of firm-level human capital risk using earnings call transcripts. By quantifying the attention corporate participants pay to labor-related categories (e.g. recruiting, turnover, compensation), the metric captures high-level human capital constraint exposure. We demonstrate that firms with higher human capital risk experience meaningful shifts in capital structures, operational policies, and corporate performance.",
+      abstract: "Human capital is a central organizational input, but standard financial data reveal little about firm-specific disruptions to workforce availability, cost, skills, and continuity. I construct a measure of disclosed human-capital disruption from earnings calls using author-defined coding criteria and a contextual language model. Within firms, a one-standard-deviation increase in the annual measure is associated with 0.55 percentage points higher idiosyncratic volatility, 0.58 percentage points higher downside deviation, and a 0.46 percentage point lower worst monthly return, with no corresponding relation to market beta. The results are stable across seven broader and narrower classification rules and remain after removing explicit labor-shortage passages and controlling for a recently published labor-shortage measure and transcript-wide negative and uncertain language. At the call level, human-capital disruption predicts approximately 0.50% higher idiosyncratic volatility over the following 42 trading days after conditioning on pre-call risk. Earnings calls therefore reveal disturbances to a key organizational input that are broader than labor shortages and informative about the distribution of firm outcomes.",
       links: [
         {
           label: "arXiv:2608.14859",
@@ -42,7 +21,28 @@ export default function Research() {
         },
         {
           label: "Email for Feedback",
-          url: "mailto:zhang2a5@mail.uc.edu?subject=Inquiry / Feedback: Measuring Human Capital Risk using Textual Analysis",
+          url: "mailto:zhang2a5@mail.uc.edu?subject=Inquiry / Feedback: Disclosed Human-Capital Disruption and Firm-Specific Risk",
+          type: "email"
+        }
+      ]
+    },
+    {
+      id: 'military-service',
+      title: "The U-Shaped Imprint: Military Service Intensity and CEOs’ Strategic Attention",
+      authors: "Zhenhua Li, Ang Zhang, Jeffrey Barden, and Jonathan D. Arthurs",
+      status: "AoM 2026 Proceedings",
+      type: "conference",
+      badgeColor: "badge-indigo",
+      abstract: "How do formative institutional experiences shape the way top executives allocate their attention? Integrating the attention-based view with imprinting theory, we examine how CEOs’ military service influences the structure of executive attention across competing strategic domains. We theorize that military experience imprints durable cognitive filters that bias habitual attention allocation, but that the strength and direction of this imprint vary in nonlinear shape with service intensity. Specifically, we propose a U-shaped relationship between military service intensity and CEOs’ self-centered attention, such that moderate exposure broadens outward attention, whereas both low and high intensity reinforce inward focus through distinct imprinting mechanisms. We test these arguments using a large panel of U.S. public firms, combining biographical data on CEOs’ military backgrounds with text analysis of MD&A disclosures. Employing fractional, compositional, and nonlinear modeling approaches, we find evidence consistent with the proposed non-monotonic imprinting effects.",
+      links: [
+        {
+          label: "AoM Proceedings",
+          url: "https://journals.aom.org/doi/abs/10.5465/AMPROC.2026.13752abstract",
+          type: "external"
+        },
+        {
+          label: "Email for Draft",
+          url: "mailto:zhang2a5@mail.uc.edu?subject=Request for Draft: The U-Shaped Imprint: Military Service Intensity and CEOs’ Strategic Attention",
           type: "email"
         }
       ]
